@@ -26,6 +26,7 @@ Istnieje kilka innych specjalizowanych funkcji przekształcających do i z podst
 
 * Mamy 16 w zapisie dziesiętnym, jaka to liczba w zapisie 16stkowym?
 * Żart o informatyku: Informatyk zna 10 typów ludzi. Zamień 10 z binarnego do dziesiętnego. 
+* kolor ff000 na bin, dlaczego on jest taki dlugi?
 
 Referencje: 
 ```
