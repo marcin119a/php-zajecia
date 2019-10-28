@@ -2,17 +2,23 @@
 
 ### Problem:
 
-Chcemy wiedziec, czy element znajduje sie w tablicy jesli tak, to najkiej sie on znajduje:
+Chcemy wiedzieć, czy element znajduje sie w tablicy jeśli tak, to na jakiej pozycji się on znajduję:
 
 ### Rozwiązanie
  
 ```php
-$array = 
-$position = array_search($array, $value)
+<?php
+$array = [1, 2, 3, 4, 5];
+$position = array_search($array, $value);
 ```
+
+### Zadanie:
+```$array = [1, 2, 3, 4, 5];```
+* Sprawdzić, czy 5 w nie jest, zastosuj odpowiednią instrukcje warunkową i zwróc wartość (jest/nie jest)
 
 ### Przyklad:
 ```php
+<?php
 $favorite_foods = array('karczochy', 'chleb', 'kalafior', 'jajo sadzone');
 $food = 'kalafior';
 $position = array_search($food, $favorite_foods);
@@ -20,7 +26,6 @@ $position = array_search($food, $favorite_foods);
 if ($position !== false) {
     
 }
-
 ```
 
 Zastosujemy funkcje ```in_array()```, aby sprawdzić czy w tablicy występuje dana wartość
@@ -57,5 +62,8 @@ $sallest = min($arr);
 ```
 
 Zadanie:
-* Stworz tablice, kolejnych liczb dziesiętnych od 0 do 10 i policz ```max``` oraz ```min```. 
-
+* Stworz tablice, kolejnych liczb dziesiętnych od 0 do 5 i policz ```max``` oraz ```min```. 
+* Napisz funkcje ```znajdz_element($element, $tablica1, $tablica)``` w 2 listach, który sprawdzi czy element jest w 2 listach. 
+* Napisz swoją funkcje ```max_moja($tablica)```, która policzy max z tablicy, nie używając funkcji ```max()```;
+* Napisz funkcje ```ppm($wiek, $waga, $wzrost, $plec)``` liczącą współczynnik podstawowej przemiany materii uwzględniając płeć, 
+```Użyj if do sprawdzenia $plec```

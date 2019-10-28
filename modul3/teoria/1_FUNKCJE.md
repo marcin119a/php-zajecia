@@ -8,10 +8,10 @@ np.
 
 ```php
 <?php
-funcion add($a $b){
+int funcion add($a int,$b int){
     return $a + $b;
 }
-$total = $add(2,2);
+$total = add(2,2);
 
 ```
 

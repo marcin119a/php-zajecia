@@ -43,3 +43,4 @@ function image($img){
 ```
 <a href="https://google.com"> google </a>
 ```
+* Napisz funkcje, ```pnk($gracz1, $gracz2)```

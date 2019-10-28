@@ -58,7 +58,7 @@ $b = ["Jan", "Marian"];
 $color = array('white', 'green', 'red');
 ```
 ### Rozwiązanie: 
-```
+```php
 <?php
 $color = array('white', 'green', 'red');
 foreach ($color as $c)

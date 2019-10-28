@@ -15,7 +15,6 @@ $array = [
     "Jozef",
     "Aleks"
 ];
-# musi byc
 $string = "";
 
 foreach ($array as $key => $value) {

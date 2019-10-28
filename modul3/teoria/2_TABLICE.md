@@ -25,7 +25,7 @@ Używamy tutaj funkcji wbudowanej ```array()``` do stworzenia tablicy. This func
  $numbers1 = array( 1, 2, 3, 4, 5);
  
  foreach( $numbers1 as $value ) {
-    echo "sposób1: $value"."\n";
+    echo "sposób1 is $value"."\n";
  }
  
  /* druga metoda do tworzenia funkcji, poprzez podanie indeksów. */
