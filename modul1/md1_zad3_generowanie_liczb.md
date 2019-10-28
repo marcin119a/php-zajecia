@@ -44,4 +44,5 @@ mt_rand() jest lepsza funkcja od rand() (zobacz zadania)
 https://stackoverflow.com/questions/28760650/difference-between-mt-rand-and-rand
 * Wygeneruj losową liczbę z przediału ```[2**10, 2**11]```
 * przetestuj działanie mt_rand($a,$b) dla liczb zmiennopozycyjnych. Dlaczego to zwraca liczbe całkowitą ? 
+* napisz program, który stworzy losowy ułamek 
 
