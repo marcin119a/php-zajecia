@@ -11,7 +11,6 @@ class ShopProduct {
     public $title = "bez tytułu";
     public $productMainName = "nazwisko";
     public $price = 0;
-   
 }
 ```
 ### Analiza
@@ -23,21 +22,40 @@ Chcemy wyposażyć nasze obiekty o specjalne metody.
 ```php
 <?php
 class ShopProduct {
-    public $title = "bez tytułu";
-    public $producerMainName = "nazwisko";
-    public $producerFirstName = "imię";
-    public $price = 0;
-
+    private $title = "bez tytułu";
+    private $producerMainName = "nazwisko";
+    private $producerFirstName = "imię";
+    private $price = 0;
+    
+    public function __construct($title, $mainName, $first, $price) {
+        $this->getProducer = $this->setProducer($mainName, $main);
+        $this->price = $this->setPrice($price);
+    }
+    
     public function getProducer(){
-        return "{$this->producerFirstName}"."{$this->producerFirstName}";
+        return "{$this->producerMainName}"."{$this->producerFirstName}";
+    }
+    public function setProducer($mainName, $firstName){
+        if (is_string($mainName) && is_string($firstName)){
+            $this->producerMainName = $mainName;
+            $this->producerFirstName = $firstName;
+        }
+    }
+    public function setPrice($price){
+        if (is_int($price)){
+            $this->price = $price;
+        }
     }
 }
-$product1 = new ShopProduct();
-$product1->title = "Moja Antonina";
-$product1->producerMainName = "Kowalski";
-$product1->producerFirstName= "Marcin";
+$product1 = new ShopProduct("to nie jest cena numeryczna");
+$product1->setProducer( "Kowalski", "Marcin");
+$product1->setPrice("24.99");
 print($product1->getProducer());
 ```
+
+### Zadanie
+* Dodaj użyteczne metody do obiektu ShopProduct. 
+* Zastosować hermetyzacje do modyfikacji pól klasowych. 
 
 ### Problem 
 

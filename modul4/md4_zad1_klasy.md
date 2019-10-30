@@ -31,7 +31,7 @@ class UserMessage {
  public $message = 'Hello All, I am ';
  
  public function introduce($name) {
-    return $this->message.$name;
+    return $this->message = $name;
  }
  
  }

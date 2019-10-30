@@ -130,7 +130,7 @@ class Kaczuszka extends Zabawka {
     }
   }      
   
-  class B extends A
+  class Kaczuszka extends Zabawka
   {
     function daj_glos()
     {
@@ -155,15 +155,14 @@ Zmienna $this jest zmienną specjalną i odnosi się do tego samego obiektu, czy
 
 ```php
 <?php
-class Kaczuszka() {
+class Kaczuszka {
     private $number_produkcji; 
     
-    public function __construct__($numer){
+    public function __construct($numer){
         $this->number_produkcji = $numer;
     }
     
-    public function get_numer_produkcji(){
-        
+    public function getNumerProdukcji(){
         if ($this->number_produkcji != 0){ 
             return $this->number_produkcji;
         } else {
@@ -171,17 +170,31 @@ class Kaczuszka() {
         }
     }
 }
-
+$kaczuszka = new Kaczuszka("12k121");
+$kaczuszka->get_number_produkcji();
 ```
 
 Interface - są zdefiniowane tak, aby nadać wspólne nazwy funkcji realizatorom. Różni implementujący mogą implementować te interfejsy zgodnie z ich wymaganiami. Można powiedzieć, że interfejsy są szkieletami, które są wdrażane przez programistów.
 ```php
 <?php
-interface Mail {
-   public function sendMail();
+interface FiguraGemoetrycznaInterface {
+   public function oblicz_pole();
+}
+class Prostokat implements  FiguraGemoetrycznaInterface {
+     public  $a = 0;
+     public  $b = 0; 
+   
+    public function oblicz_pole() {
+        return $this->a * $this->b;
+    }
 }
 
-Then, if another class implemented that interface, like this −
+class Okrag implements FiguraGemoetrycznaInterface {
+    
+}
+
+
+### Then, if another class implemented that interface, like this −
 
 class Report implements Mail {
    // sendMail() Definition goes here

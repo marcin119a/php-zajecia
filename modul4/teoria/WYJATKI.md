@@ -13,7 +13,7 @@ zobacz na przykład pliku /tmp/test.xt i z tym plikiem.
 <?php
 if(!file_exists("test.txt")) {
   die("Nie ma takigo pliku");
-}else {
+} else {
   $file = fopen("test.txt","r");
   print "plik otworzony w porządku";
 }
@@ -33,12 +33,22 @@ set_error_handler(function () {
     throw new Exception('Ach!');
 });
 
+class MyDivisionByZeroError extends Error {
+    public  function getMessage()
+    {
+      return "Dzielenie przez zero";
+    }
+}
+
 try {
     $result = 4 / 0;
-} catch( Exception $e ){
+    print("test");
+} catch( DivisionByZeroError $e ) {
+    $e->getMessage();
     echo "Divide by zero, I don't fear you!".PHP_EOL;
     $result = 0;
 }
+print("kolejny");
 ```
 https://repl.it/@MartinInf1n1ty/AuthorizedWiltedDevelopment
 

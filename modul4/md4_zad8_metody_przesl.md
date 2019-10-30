@@ -48,7 +48,7 @@ class ShopProduct {
 class BookProduct extends ShopProduct {
     function getSummartLine(){
         $base = parent::getSummaryLine();
-        $base.= ": liczba stron {$this->numPages}";
+        $base = $base.": liczba stron {$this->numPages}";
         return $base;
     }
 }
