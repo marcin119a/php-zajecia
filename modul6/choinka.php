@@ -1,0 +1,2 @@
+<?php
+$W=$argv[1];$L=$argv[2];$P=$argv[3];for($h=0;$h<$W;$h++){for($l=0;$l<$L;$l++){for($w=1;$w<$W*2+1;$w++){if($h+$w<$W||$w-$h>$W){echo" ";continue;}if($h+$w==$W||$w-$h==$W){echo"\033[93m*";}elseif((($h-$w+$W)%4+4)%4==3){echo"\033[97m$";}else{echo"\033[32m#";}}}echo "\n";}for($h=0;$h<$P;$h++){for($l=0;$l<$L*$W*2;$l++){if($l%($W*2)==$W-1){echo"\033[91mH";}else{echo" ";}}echo"\n";}for($w=0;$w<$L*$W*2-1;$w++){echo"\e[97m^";}echo"\n";

@@ -12,3 +12,11 @@ if ($argc !== 2) {
 $name = $argv[1];
 echo "Hello, $name\n";
 ```
+
+Problem:
+
+Chcemy sprawdzić informacje o PHP. 
+````
+<?php 
+echo phpinfo(); 
+
