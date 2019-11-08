@@ -1,3 +1,0 @@
-```
-pętle, warunki
-```
