@@ -21,7 +21,7 @@ Hint: strrev()
 Hint: if($x % 2 == 0)
 ```
 
-Ćwiczenie 6. Napisz program, który wystawi ocenę z testu. Użyj zagnieżdżonej instrukcji if - else 
+Ćwiczenie 6. Napisz program, który wystawi ocenę z testu. Użyj zagnieżdżonej instrukcji switch 
 ```
 0 - 39 pkt - ocena niedostateczna
 40 - 54 pkt - ocena dopuszczająca
