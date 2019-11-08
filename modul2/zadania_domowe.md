@@ -10,11 +10,11 @@ https://en.wikipedia.org/wiki/Linear_function_(calculus)
 ```
 Ćwiczenie 3. Napisz program, który stwierdzi, czy podany znak cyfrą, czy innym znakiem.
 ```
-Hint: if...else
+Hint: if...else i is_numeric()
 ```
 Ćwiczenie 4. Podajemy ciąg znaków. Napisz program sprawdza, czy ta liczba jest palindromem.
 ```
-Hint: str()
+Hint: strrev()
 ```
 Ćwiczenie 6. Napisz program, który sprawdzi, czy liczba są parzysta.
 ```
