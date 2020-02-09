@@ -6,7 +6,7 @@ Podobnie możemy wyobrazić sobie świat z wielu innych obiektów, takich jak ko
 
 Zanim przejdziemy do szczegółów, zdefiniujmy ważne pojęcia związane z programowaniem obiektowym.
 
-Class − Jest to typ danych zdefiniowany przez programistę, który zawiera funkcje lokalne, jak również dane lokalne. Możesz myśleć o klasie jako o szablonie do tworzenia wielu instancji tego samego rodzaju (lub klasy) obiektu.
+```Class(Klasa)``` − Jest to typ danych zdefiniowany przez programistę, który zawiera funkcje lokalne, jak również dane lokalne. Możesz myśleć o klasie jako o szablonie do tworzenia wielu instancji tego samego rodzaju (lub klasy) obiektu.
 
 Przykład:
 ```php
@@ -16,7 +16,7 @@ class Kaczuszka {
 }
 ```
 
-```Object``` − Indywidualna instancja struktury danych zdefiniowanej przez klasę. Klasę definiuje się raz, a następnie tworzy się wiele obiektów, które do niej należą. Obiekty znane są również jako instancje.
+```Object(Obiekt)``` − Indywidualna instancja(przypadek) struktury danych zdefiniowanej przez klasę. Klasę definiuje się raz, a następnie tworzy się wiele obiektów, które do niej należą. Obiekty znane są również jako instancje.
 
 Przykład:
 ```php
@@ -27,7 +27,7 @@ class Kaczuszka {
 $kacza_gumowa = new Kaczuszka();
 ```
 
-```Member Variable``` − Są to zmienne zdefiniowane wewnątrz klasy. Dane te będą niewidoczne dla osób znajdujących się poza klasą i będą dostępne za pośrednictwem funkcji członka. Zmienne te nazywane są atrybutami obiektu po jego utworzeniu.
+```Member Variable(zmienna wewnętrzna)``` − Są to zmienne zdefiniowane wewnątrz klasy. Dane te będą niewidoczne dla osób znajdujących się poza klasą i będą dostępne za pośrednictwem funkcji członka. Zmienne te nazywane są atrybutami obiektu po jego utworzeniu.
 
 Przykład:
 ```php
@@ -38,7 +38,7 @@ class Kaczuszka {
 $kacza_gumowa = new Kaczuszka();
 ```
 
-```Member function``` −  Są to funkcje zdefiniowane wewnątrz klasy i służą do uzyskiwania dostępu do danych obiektu.
+```Member function(funkcje wewnętrzne)``` −  Są to funkcje zdefiniowane wewnątrz klasy i służą do uzyskiwania dostępu do danych obiektu.
 
 ```php
 <?php 
@@ -52,7 +52,7 @@ class Kaczuszka {
 $kacza_gumowa = new Kaczuszka();
 ```
 
-```Inheritance``` − Gdy klasa jest definiowana przez dziedziczenie istniejącej funkcji klasy nadrzędnej, to jest ona nazywana dziedziczeniem. Tutaj klasa dziecięca odziedziczy wszystkie lub kilka funkcji członkowskich i zmiennych klasy nadrzędnej.
+```Inheritance(dziedziczenie)``` − Gdy klasa jest definiowana przez dziedziczenie istniejącej funkcji klasy nadrzędnej, to jest ona nazywana dziedziczeniem. Tutaj klasa dziecięca odziedziczy wszystkie lub kilka funkcji członkowskich i zmiennych klasy nadrzędnej.
 
 Przykład
 ```php
@@ -71,7 +71,7 @@ $kacza_gumowa = new Kaczuszka();
 ```
 
 
-```Constructor``` − odnosi się do specjalnego typu funkcji, która będzie wywoływana automatycznie za każdym razem, gdy pojawi się formacja obiektowa z klasy.
+```Constructor(konstruktor)``` − odnosi się do specjalnego typu funkcji, która będzie wywoływana automatycznie za każdym razem, gdy pojawi się formacja obiektowa z klasy.
 Przykład: 
 ```php
 <?php
@@ -90,7 +90,7 @@ $kacza_gumowa = new Kaczuszka();
 
 
 
-```Parent class``` − Klasa odziedziczona po innej klasie. Nazywa się to również klasą bazową lub superklasą
+```Parent class(klasa odziedziczona)``` − Klasa odziedziczona po innej klasie. Nazywa się to również klasą bazową lub superklasą
 
 Przykład:
 W naszym przykładie to klasa ```Zabawka```
@@ -148,7 +148,7 @@ Data Abstraction − jakakolwiek reprezentacja danych, w których szczegóły im
 
 ```
 
-Encapsulation − odnosi się do koncepcji, w której wszystkie dane i funkcje członka są enkapsulowane razem w celu utworzenia obiektu.
+```Encapsulation``` − odnosi się do koncepcji, w której wszystkie dane i funkcje członka są enkapsulowane razem w celu utworzenia obiektu.
 
 Zmienna $this jest zmienną specjalną i odnosi się do tego samego obiektu, czyli samego obiektu.
 
@@ -174,7 +174,7 @@ $kaczuszka = new Kaczuszka("12k121");
 $kaczuszka->get_number_produkcji();
 ```
 
-Interface - są zdefiniowane tak, aby nadać wspólne nazwy funkcji realizatorom. Różni implementujący mogą implementować te interfejsy zgodnie z ich wymaganiami. Można powiedzieć, że interfejsy są szkieletami, które są wdrażane przez programistów.
+```Interface``` - są zdefiniowane tak, aby nadać wspólne nazwy funkcji realizatorom. Różni implementujący mogą implementować te interfejsy zgodnie z ich wymaganiami. Można powiedzieć, że interfejsy są szkieletami, które są wdrażane przez programistów.
 ```php
 <?php
 interface FiguraGemoetrycznaInterface {
@@ -201,4 +201,4 @@ class Report implements Mail {
 }
 ```
 
-Destructor − refers to a special type of function which will be called automatically whenever an object is deleted or goes out of scope.
+```Destructor``` − odnosi się do specjalnego typu funkcji, która zostanie wywołana automatycznie za każdym razem, gdy obiekt zostanie usunięty lub wyjdzie poza zakres.
