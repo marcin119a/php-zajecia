@@ -106,7 +106,7 @@ class Zabawka {
 Przykład;
 
 W naszym przykładie to klasa ```Kaczuszka```
-```
+```php
 <?php 
 class Kaczuszka extends Zabawka {
 
